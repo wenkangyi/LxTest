@@ -1,0 +1,21 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.116'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  Linking objects
+D:\Code\C++\LxTest\RSA\obj\x64\Debug\main.o : error : In function `EncodeRSAKeyFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+D:\Code\C++\LxTest\RSA\main.cpp(26): error : undefined reference to `RSA_new'
+D:\Code\C++\LxTest\RSA\main.cpp(27): error : undefined reference to `PEM_read_RSA_PUBKEY'
+D:\Code\C++\LxTest\RSA\main.cpp(32): error : undefined reference to `RSA_size'
+D:\Code\C++\LxTest\RSA\main.cpp(34): error : undefined reference to `RSA_public_encrypt'
+D:\Code\C++\LxTest\RSA\main.cpp(40): error : undefined reference to `RSA_free'
+D:\Code\C++\LxTest\RSA\main.cpp(42): error : undefined reference to `CRYPTO_cleanup_all_ex_data'
+D:\Code\C++\LxTest\RSA\obj\x64\Debug\main.o : error : In function `DecodeRSAKeyFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+D:\Code\C++\LxTest\RSA\main.cpp(60): error : undefined reference to `RSA_new'
+D:\Code\C++\LxTest\RSA\main.cpp(61): error : undefined reference to `PEM_read_RSAPrivateKey'
+D:\Code\C++\LxTest\RSA\main.cpp(66): error : undefined reference to `RSA_size'
+D:\Code\C++\LxTest\RSA\main.cpp(68): error : undefined reference to `RSA_private_decrypt'
+D:\Code\C++\LxTest\RSA\main.cpp(74): error : undefined reference to `RSA_free'
+D:\Code\C++\LxTest\RSA\main.cpp(76): error : undefined reference to `CRYPTO_cleanup_all_ex_data'
+collect2 : error : ld returned 1 exit status
