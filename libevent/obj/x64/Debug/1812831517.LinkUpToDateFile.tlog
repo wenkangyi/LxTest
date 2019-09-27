@@ -1,0 +1,1 @@
+g++ -o "/home/wky/projects/libevent/bin/x64/Debug/libevent.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/wky/projects/libevent/obj/x64/Debug/main.o /home/wky/projects/libevent/obj/x64/Debug/NetWorkClass.o

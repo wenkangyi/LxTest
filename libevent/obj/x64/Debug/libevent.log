@@ -1,0 +1,10 @@
+﻿  Cleaning remote project directory
+  Validating sources
+  Copying sources remotely to '192.168.1.116'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  NetWorkClass.cpp
+  Linking objects
+  libevent.vcxproj -> D:\Code\C++\LxTest\libevent\bin\x64\Debug\libevent.out
