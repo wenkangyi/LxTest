@@ -1,0 +1,65 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.116'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  EpServer.cpp
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(51,1): warning : no return statement in function returning non-void [-Wreturn-type]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(51,1): warning :  }
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(51,1): warning :  ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(55,1): warning : no return statement in function returning non-void [-Wreturn-type]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(55,1): warning :  }
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(55,1): warning :  ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(83,46): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘int’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(83,46): warning :   serv_addr.sin_port = htons(this->_serverPort);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(83,46): warning :                                               ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(78,32): warning : unused variable ‘clie_addr’ [-Wunused-variable]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(78,32): warning :   struct sockaddr_in serv_addr, clie_addr;
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(78,32): warning :                                 ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,73): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,73): warning :   ssize_t res = epoll_ctl(this->_efd, EPOLL_CTL_ADD, this->_serverFD, &ep);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,73): warning :                                                                          ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,10): warning : unused variable ‘res’ [-Wunused-variable]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,10): warning :   ssize_t res = epoll_ctl(this->_efd, EPOLL_CTL_ADD, this->_serverFD, &ep);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(101,10): warning :           ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(117,67): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(117,67): warning :    nready = epoll_wait(server->_efd, gDeviceEp, MAX_CONNECT_NUM, -1);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(117,67): warning :                                                                    ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,78): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,78): warning :      ssize_t res = epoll_ctl(server->_efd, EPOLL_CTL_ADD, clientFD, &deviceTep);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,78): warning :                                                                               ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,13): warning : unused variable ‘res’ [-Wunused-variable]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,13): warning :      ssize_t res = epoll_ctl(server->_efd, EPOLL_CTL_ADD, clientFD, &deviceTep);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(128,13): warning :              ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(139,51): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(139,51): warning :      int receLen = read(clientFD, buf, RECE_BUF_MAX);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(139,51): warning :                                                    ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,73): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,73): warning :       ssize_t res = epoll_ctl(server->_efd, EPOLL_CTL_DEL, clientFD, NULL);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,73): warning :                                                                          ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,14): warning : unused variable ‘res’ [-Wunused-variable]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,14): warning :       ssize_t res = epoll_ctl(server->_efd, EPOLL_CTL_DEL, clientFD, NULL);
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(144,14): warning :               ^
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(177,7): warning : unused variable ‘mqLen’ [-Wunused-variable]
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(177,7): warning :    int mqLen = server->mq->GetEffectiveElements();
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(177,7): warning :        ^
+  Linking objects
+D:\Code\C++\LxTest\EpollServer\obj\x64\Debug\EpServer.o : error : In function `EpServer::Start()':
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(30): error : undefined reference to `pthread_create'
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(36): error : undefined reference to `pthread_create'
+D:\Code\C++\LxTest\EpollServer\EpServer.cpp(42): error : undefined reference to `pthread_create'
+D:\Code\C++\LxTest\EpollServer\obj\x64\Debug\RsaClass.o : error : In function `RsaClass::EncodeRSAKeyFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(30): error : undefined reference to `RSA_new'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(31): error : undefined reference to `PEM_read_RSA_PUBKEY'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(36): error : undefined reference to `RSA_size'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(38): error : undefined reference to `RSA_public_encrypt'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(44): error : undefined reference to `RSA_free'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(46): error : undefined reference to `CRYPTO_cleanup_all_ex_data'
+D:\Code\C++\LxTest\EpollServer\obj\x64\Debug\RsaClass.o : error : In function `RsaClass::DecodeRSAKeyFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(64): error : undefined reference to `RSA_new'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(65): error : undefined reference to `PEM_read_RSAPrivateKey'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(70): error : undefined reference to `RSA_size'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(72): error : undefined reference to `RSA_private_decrypt'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(78): error : undefined reference to `RSA_free'
+D:\Code\C++\LxTest\EpollServer\RsaClass.cpp(80): error : undefined reference to `CRYPTO_cleanup_all_ex_data'
+collect2 : error : ld returned 1 exit status
