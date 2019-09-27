@@ -1,0 +1,1 @@
+g++ -o "/home/wky/projects/HelloWord/bin/x64/Debug/HelloWord.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/wky/projects/HelloWord/obj/x64/Debug/main.o

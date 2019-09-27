@@ -1,0 +1,8 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.116'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  HelloWord.vcxproj -> D:\Code\C++\LxTest\HelloWord\bin\x64\Debug\HelloWord.out
